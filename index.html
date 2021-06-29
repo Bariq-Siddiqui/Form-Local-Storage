@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main_div">
+        <form name="record">
+            <label class="label_text" for="name">Name:</label><br>
+            <input type="text" name="name" class="input"><br>
+            <label class="label_text" for="fname">Father Name:</label><br>
+            <input type="text" name="fname" class="input"><br>
+            <label class="label_text" for="address">Address:</label><br>
+            <input type="text" name="address" class="input"><br>
+            <label class="label_text" for="email">Email:</label><br>
+            <input type="email" name="email" class="input"><br>
+            <label class="label_text" for="phoneno">Phone Number:</label><br>
+            <input type="number" name="phoneno" class="input"><br>
+            <p><button onclick="storeData()">Store Data</button><br></p>
+        </form>
+        <p><button onclick="checkData()" id="disable">Check Data</button></p>
+        <div id="pushItem">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td id="stdName"></td>
+                </tr>
+                <tr>
+                    <td>Father Name:</td>
+                    <td id="stdFname"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td id="stdAddress"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="stdEmail"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td id="stdPhone"></td>
+                </tr>
+            </table>
+            <div id="btnRemove"></div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
